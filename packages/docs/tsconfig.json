@@ -1,5 +1,8 @@
 {
-  "extends": "@cass-ui/ts-config/react.json",
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "extends": "../ts-config/react.json",
   "include": [
     "src"
   ]

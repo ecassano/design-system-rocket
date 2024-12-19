@@ -1,5 +1,5 @@
 {
-  "extends": "@cass-ui/ts-config/base.json",
+  "extends": "../ts-config/base.json",
   "include": [
     "src"
   ]
