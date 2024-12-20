@@ -1,18 +1,20 @@
 import { styled } from '../../styles'
 
 export const TooltipContainer = styled('div', {
-  width: 'fit-content',
-  height: 'max-content',
-  maxHeight: '4rem',
   maxWidth: '16rem',
-  borderRadius: 5,
   padding: '0.75rem 1rem',
   backgroundColor: '$gray900',
+  borderRadius: 5,
+
+  position: 'absolute',
+  bottom: '100%',
+  left: '50%',
+  transform: 'translateX(-50%)',
+  zIndex: 10,
 
   display: 'flex',
   justifyContent: 'center',
-
-  position: 'relative',
+  alignItems: 'center',
 
   '&::after': {
     content: '',
@@ -20,12 +22,14 @@ export const TooltipContainer = styled('div', {
     width: 0,
     height: 0,
     borderStyle: 'solid',
-
     borderWidth: '8px 8px 0 8px',
     borderColor: '$gray900 transparent transparent transparent',
-
     top: '100%',
     left: 'calc(50% - 8px)',
+  },
+
+  '&:hover': {
+    backgroundColor: '$gray500',
   },
 })
 

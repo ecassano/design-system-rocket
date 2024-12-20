@@ -1,5 +1,11 @@
 # @cass-ui/react
 
+## 2.0.2
+
+### Patch Changes
+
+- Funcionalidades do Toast e Tooltip
+
 ## 2.0.1
 
 ### Patch Changes
